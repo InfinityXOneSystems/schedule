@@ -1,4 +1,9 @@
-﻿param(
+# Script: platform-validator.ps1
+# Description: Validates Python files, patches FastAPI health endpoints, and sets up necessary directories.
+# Author: Manus AI
+# Date: 2026-01-11
+
+param(
     [ValidateSet("validate","patch","heal","full")]
     [string]$Mode = "full"
 )
